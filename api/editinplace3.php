@@ -33,7 +33,7 @@ if (isset($_GET) && count($_GET)>0)
 	{   
 		// select * from editinplace order by idusuario asc
 		
-		$query=$db->query("SELECT * FROM `proveedor` where id_proveedor=$idu");
+		$query=$db->query("SELECT * FROM proveedor where id_proveedor=$idu");
 		$datos=array();
 		while ($usuarios=$query->fetch_array())
 		{
