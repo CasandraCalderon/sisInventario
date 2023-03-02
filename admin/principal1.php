@@ -46,46 +46,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <!-- Begin: life time stats -->
-                            <div class="portlet light bordered">
-                                <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class="icon-share font-blue"></i>
-                                        <span class="caption-subject font-blue bold uppercase">Entradas</span>
-                                        <span class="caption-helper">reportes...</span>
-                                    </div>
-                                   
-                                </div>
-                                <div class="portlet-body">
-                                   <div id="chartContainer2" style="height: 300px; width: 100%;">
-                                              
-                                          </div>
-
-                                </div>
-                            </div>
+                            
                             <!-- End: life time stats -->
                         </div>
                         <div class="col-md-6">
-                            <!-- Begin: life time stats -->
-                            <!-- BEGIN PORTLET-->
-                            <div class="portlet light bordered">
-                                <div class="portlet-title tabbable-line">
-                                    <div class="caption">
-                                        <i class="icon-globe font-red"></i>
-                                        <span class="caption-subject font-red bold uppercase">Salidas</span>
-                                        <span class="caption-helper">reportes...</span>
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" id="portlet_ecommerce_tab_1">
-                                          <div id="chartContainer" style="height: 300px; width: 100%;">
-                                              
-                                          </div>
-
-                                        </div>
-                                    </div>
+                           
                                    
-                                </div>
+                            
                             </div>
                             <!-- End: life time stats -->
                         </div>

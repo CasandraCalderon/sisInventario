@@ -462,7 +462,6 @@ if (isset($_GET['crear'])) {
                                     <select class="form-control" name="estado_proveedor">
                                         <option value="DISPONIBLE" selected>DISPONIBLE</option>
                                         <option value="NO DISPONIBLE">NO DISPONIBLE</option>
-                                        <option value="RETIRADO">RESTIRADO</option>
                                         </select>
                                     </td>
                                   </tr>

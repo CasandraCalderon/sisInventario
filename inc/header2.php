@@ -61,13 +61,7 @@
                                 <span class="arrow open"></span>
                             </a>
                             <ul class="sub-menu">
-                             <li class="nav-item start ">
-                                    <a href="?admin=principal1" class="nav-link ">
-                                        <i class="fa fa-home"></i>
-                                        <span class="title">INICIO</span>
-                                      
-                                    </a>
-                                </li>
+                             
                                
                                 <li class="nav-item start ">
                                     <a href="?admin=productos" class="nav-link ">
@@ -115,7 +109,7 @@
                                 <li class="nav-item start ">
                                             <a href="?admin=pedidos" class="nav-link ">
                                                 <i class="fa fa-search-plus"></i>
-                                                <span class="title">Pendientes</span>
+                                                <span class="title">Responsables</span>
                                               
                                             </a>
                                         </li>

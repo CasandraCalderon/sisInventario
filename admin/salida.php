@@ -293,7 +293,7 @@ $bd->consulta($sql);
                                     </td>
                                       <td width="50%"><center>
                                    <?php
-                                   $consulta="SELECT * FROM  proveedor";
+                                   $consulta="SELECT * FROM  proveedor WHERE estado_proveedor='DISPONIBLE'";
                                    $bd->consulta($consulta);?>
                                            <select class="form-control"  name="proveedor">
                                   <?php
