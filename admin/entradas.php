@@ -64,8 +64,23 @@ $bd->consulta($sql);
                     echo "<script> alert('campos vacios')</script>";
                     echo "<br>";
                 }else{
-                                $sql3="delete from `ingresos` where `ingresos`.`id_ingreso`='".$x1."'";
-                                $bd->consulta($sql3);
+                                $sql2="SELECT * FROM `ingresos` WHERE `ingresos`.`id_ingreso`='".$x1."'";
+                                $bd->consulta($sql2);
+                                while ($fila=$bd->mostrar_registros()) {
+                                  $idn= $fila->id_service_id_ingreso; 
+                                  $total= $fila->cantida_movimiento; 
+                                 }
+                                 $sql3="UPDATE `service` SET `service`.`cantida`=`service`.`cantida`-'$total' WHERE `service`.`id_service`='$idn'";
+                                 $bd->consulta($sql3);
+                                $sql4="delete from `ingresos` where `ingresos`.`id_ingreso`='".$x1."'";
+                                $bd->consulta($sql4);
+                                
+                                
+                                
+
+                              
+                                
+                               
                                
 
                    
