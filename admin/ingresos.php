@@ -198,11 +198,7 @@ if (isset($_GET['crear'])) {
                                                 <th class="min-phone-l">Entradas</th>
                                                 <th class="min-phone-l">Salidas</th>
                                                 <th class="min-phone-l">cantidad</th>
-                                                
-                                          
-                                          
-                                                
-                                      
+
                                             </tr>
                                         </thead>
                                         <tbody>

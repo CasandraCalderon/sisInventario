@@ -13,7 +13,7 @@
 <script LANGUAGE="JavaScript">
 function confirmDel(url){
 //var agree = confirm("¿Realmente desea eliminarlo?");
-if (confirm("¿Realmente desea eliminar este Empleado?"))
+if (confirm("¿Realmente desea eliminar esta entrada?"))
     window.location.href = url;
 else
     return false ;
@@ -344,7 +344,7 @@ $bd->consulta($sql);
                                   <tr> 
                                     
                                     <td colspan="2" width="100%"><center>
-                                   <textarea class="form-control" name="motivo"></textarea>
+                                   <textarea class="form-control" onkeyup="javascript:this.value=this.value.toUpperCase();" name="motivo"></textarea>
                                     </td>
                                     
                                   </tr>

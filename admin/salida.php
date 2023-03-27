@@ -2,10 +2,12 @@
 
 
 
+
+
 <script LANGUAGE="JavaScript">
 function confirmDel(url){
 //var agree = confirm("¿Realmente desea eliminarlo?");
-if (confirm("¿Realmente desea eliminar este Empleado?"))
+if (confirm("¿Realmente desea eliminar esta salida?"))
     window.location.href = url;
 else
     return false ;
@@ -65,7 +67,7 @@ $bd->consulta($sql);
                                 $sql3="UPDATE `service` SET `service`.`cantida`=`service`.`cantida`+'$total' WHERE `service`.`id_service`='$idn'";
                                 $bd->consulta($sql3);
                                
-                                $sql4="delete from `salida` where `id_salida`='".$x1."'";
+                                $sql4="delete from `salida` where `salida`.`id_salida`='".$x1."'";
                                 $bd->consulta($sql4);
                                
 
@@ -125,15 +127,16 @@ $bd->consulta($sql);
                                                   $bd->consulta($editar);
                     
 
-                                             $sql="INSERT INTO `salida` (`id_salida`, `id_service_id_salida`, `fecha_salida`, `id_proveedor_id_salida`, `cantida_salida`, `motivo_salida`) VALUES (NULL, '$service', '$resultado', '$proveedor', '$cantida', '$motivo')";
-                                              $bd->consulta($sql);
+                                             $sql5="INSERT INTO `salida` (`id_salida`, `id_service_id_salida`, `fecha_salida`, `id_proveedor_id_salida`, `cantida_salida`, `motivo_salida`) VALUES (NULL, '$service', '$resultado', '$proveedor', '$cantida', '$motivo')";
+                                              $bd->consulta($sql5);
 
                                                         //echo "Datos Guardados Correctamente";
                                                         echo '<div class="alert alert-success alert-dismissable">
                                                                     <i class="fa fa-check"></i>
                                                                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                                                    <b>Bien!</b> Datos Registrados Correctamente... ';
+                                                                    <b>Bien!</b> Datos Registrados Correctamente... '; 
                                                            echo '   </div>';
+                                                       
                                   
     }
 }
@@ -327,7 +330,7 @@ $bd->consulta($sql);
                                   <tr> 
                                     
                                     <td colspan="2" width="100%"><center>
-                                   <textarea class="form-control" name="motivo"></textarea>
+                                   <textarea class="form-control" onkeyup="javascript:this.value=this.value.toUpperCase();" name="motivo"></textarea>
                                     </td>
                                     
                                   </tr>

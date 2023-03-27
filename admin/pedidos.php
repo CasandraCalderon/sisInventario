@@ -408,10 +408,10 @@ if (isset($_GET['crear'])) {
                                 <tbody>
                                   <tr>
                                   <td width="40%"><center>
-                                        <input   required type="text" required name="ci_proveedor" required class="form-control">
+                                        <input   required type="text" autocomplete="off" onkeyup="javascript:this.value=this.value.toUpperCase();" required name="ci_proveedor" required class="form-control">
                                     </td> 
                                     <td width="30%"><center>
-                                        <input   required type="text" required name="nombre_proveedor" required class="form-control">
+                                        <input   required type="text" autocomplete="off" onkeyup="javascript:this.value=this.value.toUpperCase();" required name="nombre_proveedor" required class="form-control">
                                     </td>
                                   </tr>
                                 </tbody>
@@ -423,10 +423,10 @@ if (isset($_GET['crear'])) {
                                 <tbody>
                                   <tr> 
                                     <td width="50%"><center>
-                                        <input class="form-control" required type="text" name="telefono_proveedor" />
+                                        <input class="form-control" autocomplete="off" onkeyup="javascript:this.value=this.value.toUpperCase();" required type="text" name="telefono_proveedor" />
                                     </td>
                                     <td width="50%" ><center>
-                                      <input class="form-control" required type="text" name="correo" />
+                                      <input class="form-control" autocomplete="off" required type="text" name="correo" />
                                     </td>
                                     
                                   </tr>

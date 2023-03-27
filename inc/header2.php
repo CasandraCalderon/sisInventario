@@ -65,7 +65,7 @@
                                
                                 <li class="nav-item start ">
                                     <a href="?admin=productos" class="nav-link ">
-                                        <i class="fa fa-barcode"></i>
+                                    <i class="fa fa-balance-scale"></i>
                                     
                                         
                                         <span class="title">Materiales</span>
@@ -74,8 +74,8 @@
                                 </li>
                                 <li class="nav-item start ">
                                     <a href="#" class="nav-link nav-toggle">
-                                        <i class="fa fa-calculator"></i>
-                                        <span class="title">Productos Kardex</span>
+                                    <i class="fa fa-book"></i>
+                                        <span class="title">Control de Materiales</span>
                                         <span class="selected"></span>
                                         <span class="arrow"></span>
                                     </a>

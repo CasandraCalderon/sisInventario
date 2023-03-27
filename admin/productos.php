@@ -8,7 +8,7 @@
 <script LANGUAGE="JavaScript">
 function confirmDel(url){
 //var agree = confirm("¿Realmente desea eliminarlo?");
-if (confirm("¿Realmente desea eliminar este Empleado?"))
+if (confirm("¿Realmente desea eliminar este material?"))
     window.location.href = url;
 else
     return false ;
@@ -406,10 +406,10 @@ if (isset($_GET['crear'])) {
                                 <tbody>
                                   <tr>
                                   <td width="40%"><center>
-                                        <input   required type="text" required name="item" required class="form-control">
+                                        <input  autocomplete="off" onkeyup="javascript:this.value=this.value.toUpperCase();" required type="text" required name="item" required class="form-control">
                                     </td> 
                                     <td width="30%"><center>
-                                        <input   required type="text" required name="nombre" required class="form-control">
+                                        <input autocomplete="off"  onkeyup="javascript:this.value=this.value.toUpperCase();" required type="text" required name="nombre" required class="form-control">
                                     </td>
                                   </tr>
                                 </tbody>
@@ -421,10 +421,13 @@ if (isset($_GET['crear'])) {
                                 <tbody>
                                   <tr> 
                                     <td width="50%"><center>
-                                        <input class="form-control" required type="text" name="tipopro" />
+                                        <select class="form-control" required name="tipopro">
+                                        <option value="PZA" selected>PZA</option>
+                                        </select>
+                                    </td>
                                     </td>
                                     <td width="50%" ><center>
-                                      <input class="form-control" required type="text" name="descripcion" />
+                                      <input autocomplete="off" onkeyup="javascript:this.value=this.value.toUpperCase();" class="form-control" type="text" name="descripcion" />
                                     </td>
                                     
                                   </tr>
@@ -433,7 +436,7 @@ if (isset($_GET['crear'])) {
                                   <tr>
                                                
                                                         <th>Imagen Principal</th>
-                                                        <th></th>
+                                                       
                                 </thead>
                                 <tbody>
                                   <tr> 
